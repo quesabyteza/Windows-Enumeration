@@ -14,29 +14,33 @@ A collection of PowerShell scripts created by **Michael van Staden** for interna
 **Usage:**
 ```powershell
 .\Enumerate-SMB-Shares.ps1 -Target TARGET_DOMAIN_OR_HOST
-2. Enumerate-Kerberoastable.ps1
+```
+
+### 2.`Enumerate-Kerberoastable.ps1`
 Identifies user accounts with SPNs set (Kerberoasting targets).
 
 Helps locate accounts that can be attacked via offline TGS ticket cracking.
 
-Usage:
+**Usage:**
 
-powershell
+```powershell
 
 .\Enumerate-Kerberoastable.ps1
+```
 
-3. Enumerate-DomainTrusts.ps1
+### 3. Enumerate-DomainTrusts.ps1
 Lists all domain trusts and trust relationships.
 
 Useful for mapping external trust exposure and lateral movement opportunities.
 
-Usage:
+**Usage:**
 
-powershell
+```powershell
 
 .\Enumerate-DomainTrusts.ps1
+```
 
-4. Enumerate-GroupMembership.ps1
+### 4. Enumerate-GroupMembership.ps1
 Recursively lists members of critical domain groups like:
 
 Domain Admins
@@ -47,22 +51,24 @@ Administrators
 
 Helps identify privileged users and group escalation vectors.
 
-Usage:
+**Usage:**
 
-powershell
+```powershell
 
 .\Enumerate-GroupMembership.ps1
+```
 
-5. Enumerate-DNSZoneTransfer.ps1
+### 5. Enumerate-DNSZoneTransfer.ps1
 Attempts a DNS zone transfer against the current domain controller.
 
 Uses nslookup to dump DNS records (if zone transfers are misconfigured).
 
 Usage:
 
-powershell
+```powershell
 
 .\Enumerate-DNSZoneTransfer.ps1
+```
 
 ⚠️ Legal Notice
 These tools are intended solely for authorized, ethical, and educational use. Unauthorized use on production systems or networks without explicit consent is unethical and illegal. Use responsibly and always obtain proper authorization.
