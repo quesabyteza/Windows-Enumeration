@@ -63,12 +63,28 @@ Attempts a DNS zone transfer against the current domain controller.
 
 Uses nslookup to dump DNS records (if zone transfers are misconfigured).
 
-Usage:
+**Usage:**
 
 ```powershell
 
 .\Enumerate-DNSZoneTransfer.ps1
 ```
+### 6. Get-The-Hash.sh
+
+**Usage:**
+Save as win-creds-remote.sh
+```terminal
+chmod +x win-creds-remote.sh
+sudo apt install impacket-scripts smbclient (if not already installed)
+./win-creds-remote.sh
+```
+Features
+Menu-driven
+Secure credential or hash input
+Automates remote shadow copy and registry save extraction over SMB (using psexec.py)
+Downloads files via SMB and dumps hashes locally
+Guidance for Metasploit keylogging/hashdump
+Cleans up after itself
 
 ⚠️ Legal Notice
 These tools are intended solely for authorized, ethical, and educational use. Unauthorized use on production systems or networks without explicit consent is unethical and illegal. Use responsibly and always obtain proper authorization.
