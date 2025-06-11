@@ -22,9 +22,9 @@ Helps locate accounts that can be attacked via offline TGS ticket cracking.
 Usage:
 
 powershell
-Copy
-Edit
+
 .\Enumerate-Kerberoastable.ps1
+
 3. Enumerate-DomainTrusts.ps1
 Lists all domain trusts and trust relationships.
 
@@ -33,9 +33,9 @@ Useful for mapping external trust exposure and lateral movement opportunities.
 Usage:
 
 powershell
-Copy
-Edit
+
 .\Enumerate-DomainTrusts.ps1
+
 4. Enumerate-GroupMembership.ps1
 Recursively lists members of critical domain groups like:
 
@@ -50,9 +50,9 @@ Helps identify privileged users and group escalation vectors.
 Usage:
 
 powershell
-Copy
-Edit
+
 .\Enumerate-GroupMembership.ps1
+
 5. Enumerate-DNSZoneTransfer.ps1
 Attempts a DNS zone transfer against the current domain controller.
 
@@ -61,9 +61,9 @@ Uses nslookup to dump DNS records (if zone transfers are misconfigured).
 Usage:
 
 powershell
-Copy
-Edit
+
 .\Enumerate-DNSZoneTransfer.ps1
+
 ⚠️ Legal Notice
 These tools are intended solely for authorized, ethical, and educational use. Unauthorized use on production systems or networks without explicit consent is unethical and illegal. Use responsibly and always obtain proper authorization.
 
