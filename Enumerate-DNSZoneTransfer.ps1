@@ -4,14 +4,14 @@
 #>
 
 $domain = (Get-ADDomain).DNSRoot
-Write-Host "[+] Attempting DNS zone transfer on $domain..." -ForegroundColor Cyan
-
 $dns = (Get-DnsClientServerAddress -AddressFamily IPv4).ServerAddresses[0]
+Write-Host "[+] Attempting DNS zone transfer on $domain using $dns..." -ForegroundColor Cyan
 
-$output = nslookup -type=any $domain $dns
+$output = nslookup.exe -querytype=AXFR $domain $dns
 
-if ($output -like "*nameserver*") {
+if ($output -match "received \d+ records") {
     Write-Output $output
 } else {
     Write-Warning "[-] Zone transfer failed or not permitted."
 }
+
