@@ -72,9 +72,9 @@ Uses nslookup to dump DNS records (if zone transfers are misconfigured).
 ### 6. Get-The-Hash.sh
 
 **Usage:**
-Save as win-creds-remote.sh
+Save as Get-The-Hash.sh
 ```terminal
-chmod +x win-creds-remote.sh
+chmod +x Get-The-Hash.sh
 sudo apt install impacket-scripts smbclient (if not already installed)
 ./win-creds-remote.sh
 ```
