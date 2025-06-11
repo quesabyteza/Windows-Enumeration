@@ -76,7 +76,7 @@ Save as Get-The-Hash.sh
 ```terminal
 chmod +x Get-The-Hash.sh
 sudo apt install impacket-scripts smbclient (if not already installed)
-./win-creds-remote.sh
+./Get-The-Hash.sh
 ```
 Features
 Menu-driven
